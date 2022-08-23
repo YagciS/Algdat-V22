@@ -1,3 +1,4 @@
+//Oppgave 1.
 public class fakultetBeregn {
     public static long fak(int n) {
         int sum = n;
