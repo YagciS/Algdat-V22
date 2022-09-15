@@ -1,10 +1,17 @@
 package Tabell;
 
+import java.util.NoSuchElementException;
+
 public class maks {
     public static int maks(int[] a, int fra, int til) {
-        if (fra < 0 || til > a.length || fra >= til) {
-            throw new IllegalArgumentException("Illegalt intervall!");
-        }
+        if (a == null) throw new NullPointerException
+                ("parametertabellen a er null!");
+
+        fratilKontroll.fratilKontroll(a.length, fra , til);
+
+        if (fra == til) throw new NoSuchElementException
+                ("fra(" + fra + ") = til(" + til + ") - tomt tabellintervall!");
+
 
         int m = fra;              // indeks til største verdi i a[fra:til>
         int maksverdi = a[fra];   // største verdi i a[fra:til>

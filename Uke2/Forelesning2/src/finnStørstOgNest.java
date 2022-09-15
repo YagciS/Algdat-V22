@@ -1,4 +1,5 @@
 import java.util.Arrays;
+
 public class finnStørstOgNest {
     public static int maks(int[] a, int fra, int til){
         int mix = fra;

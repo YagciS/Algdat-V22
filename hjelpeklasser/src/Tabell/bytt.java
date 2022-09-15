@@ -6,4 +6,9 @@ public class bytt {
         a[i] = a[j];
         a[j] = temp;
     }
+    public static void bytt(char[] a, int i, int j){
+        char temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
 }
